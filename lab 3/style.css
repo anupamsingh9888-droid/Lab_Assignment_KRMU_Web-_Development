@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    padding: 1.5rem;
+    border: 0rem;
+    border-style: solid;
+    background-color: rgb(31, 55, 142);
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.class_head {
+    border: 0rem;
+}
+
+#nav1 a {
+    color: white;
+    text-decoration: none;
+    font-size: large;
+    margin-left: 1rem;
+    transform: scale(0.6);
+}
+
+#nav1 a:hover {
+    box-shadow: 0 6px 18px #762222a0;
+}
+
+main {
+    padding: 2rem;
+    border: 0px;
+    border-style: solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#p1 {
+    font-size: xx-large;
+}
+
+#p2 {
+    font-size: xxx-large;
+    animation: colorCycle 3s infinite linear;
+}
+
+@keyframes colorCycle {
+    0% {
+        color: yellow;
+    }
+
+    25% {
+        color: red;
+    }
+
+    50% {
+        color: blue;
+    }
+
+    75% {
+        color: green;
+    }
+
+    100% {
+        color: yellow;
+    }
+}
+
+#profile_picture img {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+}
+
+#about_2 {
+    border: 0rem solid;
+    padding: 2rem;
+}
+
+#about_2 h1 {
+    padding-bottom: 0.5rem;
+}
+
+#about_3 {
+    border: 0rem solid;
+    padding: 2rem;
+}
+
+#about_3 h1 {
+    margin-bottom: 1rem;
+}
+
+#skills {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-around;
+}
+
+.class_skills {
+    border: .1rem;
+    height: 5rem;
+    width: 12rem;
+    border-radius: 15px;
+    background: rgb(31, 55, 142);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    transition: transform 0.2s, box-shadow 0.3s;
+    cursor: pointer;
+    box-shadow: 0 1px 10px #000000a0;
+}
+
+.class_skills:hover {
+    transform: scale(0.9);
+    box-shadow: 0 6px 18px #762222a0;
+}
+
+#about_4 {
+    border: 0rem solid;
+    padding: 2rem;
+}
+
+#about_4 h1 {
+    margin-bottom: 1rem;
+}
+
+#project {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 2rem;
+    justify-content: center;
+
+}
+
+
+.img-container {
+    position: relative;
+    width: 40rem;
+    height: 20rem;
+    overflow: hidden;
+    box-shadow: 0 10px 20px #000000a0;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+.img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+}
+
+.img1 {
+    animation: fadeInOut 4s linear infinite;
+}
+
+.img2 {
+    animation: fadeOutIn 4s linear infinite;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOutIn {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+#cont {
+    margin-bottom: 1rem;
+}
+
+#contact_me {
+    display: flex;
+    justify-content: center;
+}
+
+#contact {
+    right: 10px;
+    box-shadow: 0 10px 20px #000000a0;
+    border-radius: 20px;
+    border: 2px;
+    height: 20rem;
+    width: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    border: 2px solid rgb(31, 55, 142);
+    height: max-content;
+    width: 30rem;
+    height: 2rem;
+}
+
+.box2 {
+    border: 2px solid rgb(31, 55, 142);
+    height: max-content;
+    width: 30rem;
+    height: 5rem;
+}
+
+.submit-btn {
+    width: 100%;
+    background-color: rgb(31, 55, 142);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: rgb(31, 55, 142);
+    transition: background-color 0.3s;
+}
+
+
+
+
+
+#backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: rgb(31, 55, 142);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    z-index: 1000;
+    box-shadow: 0 10px 20px #000000a0;
+
+}
+
+#foot {
+    background-color: rgb(31, 55, 142);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+@media (max-width: 500px) {
+
+    header,
+    main,
+    section,
+    footer {
+        padding: 0.7rem;
+    }
+
+    #about_1 h1,
+    #about_2 h1,
+    #about_3 h1,
+    #about_4 h1,
+    #cont,
+    #foot {
+        font-size: 2rem;
+    }
+
+
+    .class_head h1 {
+        font-size: larger;
+    }
+    #nav1 a {
+        font-size: medium;
+        margin-left: .5rem;
+        transform: scale(0.6);
+    }
+
+    #p1 {
+        font-size: 1rem;
+    }
+
+    #p2 {
+        font-size: 1.15rem;
+    }
+
+    #profile_picture img {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    #skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .class_skills {
+        width: 90vw;
+        height: 3rem;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #project {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .img-container {
+        width: 95vw;
+        height: 15rem;
+        border-radius: 10px;
+    }
+
+    #cont {
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
+}
+    #contact {
+        width: 95vw;
+        height: auto;
+        border-radius: 10px;
+        padding: 0.7rem;
+    }
+
+    .box,
+    .box2 {
+        width: 80vw;
+        min-width: 150px;
+    }
+
+    .submit-btn {
+        font-size: 0.95rem;
+        padding: 8px;
+        border-radius: 16px;
+    }
+
+    #backToTop {
+        padding: 8px 10px;
+        font-size: 12px;
+        bottom: 16px;
+        right: 15px;
+    }
+
+    #foot {
+        font-size: 0.8rem;
+        padding: 5px;
+        margin-top: 20px;
+    }
+}
