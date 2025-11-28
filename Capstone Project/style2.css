@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #fff;
+  color: black;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+
+img {
+  width: 100%;
+  max-width: 450px;
+  display: block;
+  border-radius: 12px;
+  margin: auto;
+}
+
+
+.button {
+  padding: 10px 22px;
+  border-radius: 25px;
+  font-size: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s;
+  border: 2px solid red;
+  color: red;
+}
+
+.button.sword,
+.button.primary {
+  background: red;
+  color: white;
+}
+
+.button.ghost:hover {
+  background: red;
+  color: white;
+}
+
+
+.header {
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 700;
+  color: red;
+}
+
+.nav {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+.auth {
+  display: flex;
+  gap: 15px;
+}
+
+
+.hero {
+  padding: 70px 0;
+}
+
+.hero-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.hero-text p {
+  margin: 15px 0 25px;
+  font-size: 17px;
+  max-width: 430px;
+}
+
+.hero-img-card {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+
+.search {
+  margin: 35px auto 0;
+  background: white;
+  padding: 15px;
+  border-radius: 40px;
+  display: flex;
+  gap: 15px;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.15);
+  max-width: 650px;
+}
+
+.search input,
+.search select {
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.search input {
+  flex: 1;
+}
+
+
+.section {
+  padding: 65px 0;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+
+
+.cat-row {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 25px;
+  text-align: center;
+}
+
+.box1 {
+  padding: 18px 0;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.box1:hover {
+  background: #f5f5f5;
+}
+
+
+.rest-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.box2 {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: 0.3s;
+  background: white;
+}
+
+.box2:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.2);
+}
+
+.box2>div {
+  padding: 15px;
+}
+
+.type {
+  font-size: 14px;
+  color: grey;
+  margin: 5px 0;
+}
+
+.rate {
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+
+.soft {
+  background: #fafafa;
+}
+
+.promo-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.promo-card {
+  flex: 1;
+  padding: 18px;
+  background: white;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+
+.test-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.test-card {
+  padding: 25px;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.stars {
+  font-size: 20px;
+  color: orange;
+}
+
+.name {
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+
+.footer {
+  padding: 25px 0;
+  border-top: 1px solid #ddd;
+}
+
+.foot-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+@media (max-width: 900px) {
+
+  .hero-row,
+  .promo-grid {
+    flex-direction: column;
+  }
+
+  .rest-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .test-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cat-row {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .cat-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .rest-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-text h1 {
+    font-size: 35px;
+  }
+
+  .search {
+    flex-direction: column;
+  }
+}
